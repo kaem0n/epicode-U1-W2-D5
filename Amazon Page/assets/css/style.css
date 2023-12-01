@@ -144,7 +144,6 @@ section img {
 figure {
     width: 20vw;
     min-width: 273px;
-    aspect-ratio: 3 / 3.7;
 }
 
 figure img {
