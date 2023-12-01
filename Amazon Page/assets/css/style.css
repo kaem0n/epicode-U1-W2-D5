@@ -133,18 +133,17 @@ section img {
 }
 
 .caption {
-    display: block;
     margin-bottom: 20px;
 }
 
 #figure-container {
-    display: flex;
-    justify-content: space-between;
-}
+    display: flex; /* Mi sono permesso di usare il flex solo qui perché non ero soddisfatto del risultato su schermi più larghi senza la spaziatura adattiva... */
+    justify-content: space-between; /* ... Così facendo, considerando le proporzioni su uno schermo largo 1366px (a occhio la risoluzione del mockup), riesco... */
+} /* ... a mantenere delle proporzioni fedeli anche su risoluzioni più elevate, mantenendo quindi la resa visiva. */
 
 figure {
-    display: inline-block;
     width: 20vw;
+    min-width: 273px;
     aspect-ratio: 3 / 3.7;
 }
 
